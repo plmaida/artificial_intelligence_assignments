@@ -1,2 +1,2 @@
 # artificial_intelligence_assignments
-Repository for Artificial Intelligence class
+Repository for Artificial Intelligence projects
