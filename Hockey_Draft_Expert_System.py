@@ -1,6 +1,6 @@
-#Q3 - Create an AI system that uses PyKnow to answer a question. 
+#Creating an AI expert system that uses PyKnow to answer a question. 
 
-#Hockey teams spend millions of dollars trying to determine if they should draft an 18 year old based on an attemptto project 
+#Hockey teams spend millions of dollars trying to determine if they should draft an 18 year old based on an attempt to project 
 #their future skill and impact in the NHL. This expert system will allow you to determine which round you should draft a
 #player based on 5 different criteria. Hockey drafts are typically much more complicated, but this will provide a starting point,
 #because these are the 5 most important criteria for a hockey player. In the NHL there are 7 rounds of drafting.
