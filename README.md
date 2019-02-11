@@ -1,0 +1,2 @@
+# artificial_intelligence_projects
+Repository for Artificial Intelligence projects
