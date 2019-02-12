@@ -64,7 +64,10 @@ class DraftRound(KnowledgeEngine):
                 Hockey_IQ(hockey_iq="high"),
                 Skating(skating="high"),
                 LineMate(linemate=True),
-                OR(Off_driver(off_driver="high"), Off_driver(off_driver="medium")),
+                OR(
+                    Off_driver(off_driver="high"),
+                    Off_driver(off_driver="medium"),
+                ),
                 Def_aware(def_aware="high"),
             ),
         )
@@ -79,7 +82,10 @@ class DraftRound(KnowledgeEngine):
                 Hockey_IQ(hockey_iq="high"),
                 OR(Skating(skating="high"), Skating(skating="medium")),
                 LineMate(linemate=True),
-                OR(Off_driver(off_driver="high"), Off_driver(off_driver="medium")),
+                OR(
+                    Off_driver(off_driver="high"),
+                    Off_driver(off_driver="medium"),
+                ),
                 OR(Def_aware(def_aware="high"), Def_aware(def_aware="medium")),
             ),
             AND(
@@ -87,7 +93,10 @@ class DraftRound(KnowledgeEngine):
                 Hockey_IQ(hockey_iq="high"),
                 Skating(skating="high"),
                 LineMate(linemate=True),
-                OR(Off_driver(off_driver="high"), Off_driver(off_driver="medium")),
+                OR(
+                    Off_driver(off_driver="high"),
+                    Off_driver(off_driver="medium"),
+                ),
                 OR(Def_aware(def_aware="high"), Def_aware(def_aware="medium")),
             ),
         )
@@ -101,14 +110,20 @@ class DraftRound(KnowledgeEngine):
                 Position(positions="forward"),
                 Hockey_IQ(hockey_iq="high"),
                 OR(Skating(skating="high"), Skating(skating="medium")),
-                OR(Off_driver(off_driver="high"), Off_driver(off_driver="medium")),
+                OR(
+                    Off_driver(off_driver="high"),
+                    Off_driver(off_driver="medium"),
+                ),
                 OR(Def_aware(def_aware="high"), Def_aware(def_aware="medium")),
             ),
             AND(
                 Position(positions="defense"),
                 Hockey_IQ(hockey_iq="high"),
                 Skating(skating="high"),
-                OR(Off_driver(off_driver="high"), Off_driver(off_driver="medium")),
+                OR(
+                    Off_driver(off_driver="high"),
+                    Off_driver(off_driver="medium"),
+                ),
                 OR(Def_aware(def_aware="high"), Def_aware(def_aware="medium")),
             ),
         )
@@ -122,7 +137,10 @@ class DraftRound(KnowledgeEngine):
                 Position(positions="forward"),
                 Hockey_IQ(hockey_iq="high"),
                 OR(Skating(skating="high"), Skating(skating="medium")),
-                OR(Off_driver(off_driver="high"), Off_driver(off_driver="medium")),
+                OR(
+                    Off_driver(off_driver="high"),
+                    Off_driver(off_driver="medium"),
+                ),
             ),
             AND(
                 Position(positions="defense"),
@@ -179,7 +197,9 @@ else:
     linemate_q = input(
         "Is the player the best player on their line? (Yes or No)"
     ).lower()
-    off_driver_q = input("Rate the player's ability to drive offense: ").lower()
+    off_driver_q = input(
+        "Rate the player's ability to drive offense: "
+    ).lower()
     def_aware_q = input("Rate the player's defensive awareness: ").lower()
 
     system.declare(
